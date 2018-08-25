@@ -1,6 +1,9 @@
 # Let's not publish my contact info to the internet
 contact.tex
 
+# Swap? Nah
+*.swp
+
 ##
 #  LaTeX stuff
 ##
