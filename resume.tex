@@ -24,10 +24,8 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
-\name{John Smith} % Your name
-\address{123 Broadway \\ City, State 12345} % Your address
-\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+\name{Sean Newman} % Your name
+\input{contact} % import the contact info
 
 \begin{document}
 
@@ -37,12 +35,55 @@
 
 \begin{rSection}{Education}
 
-{\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
-B.S. in Computer Science \& Engineering \\
-Minor in Linguistics \smallskip \\
-Member of Eta Kappa Nu \\
-Member of Upsilon Pi Epsilon \\
-Overall GPA: 5.678
+{\bf Rochester Institute of Technology} \hfill {\em Est. May 2021} \\ 
+B.S. in Computing Security
+Overall GPA: 3.45
+
+\end{rSection}
+
+% Skillz
+% -------------
+
+\begin{rSection}{Skills}
+    {\bf Programming} - Python, C, Java, Bash, and PowerShell \\
+    {\bf Operating Systems} - Linux (Debian- and RHEL-based), Windows Server
+    systems (post 2012) \\
+    {\bf Virtualization} - VMware vSphere Enterprise 6.5 (ESXi, vCenter Server)
+    VMware Workstation Pro \\
+    Basic experience with:
+    \begin{itemize}
+        \item Ansible configuration management
+        \item Active Directory administration
+        \item Cisco IOS
+    \end{itemize}
+
+\end{rSection}
+
+% Projects
+% -------------
+
+\begin{rSection}{Projects}
+
+    {\bf Home Lab} - vSphere infrastructure set up on personal server
+    \begin{itemize}
+        \item ESXi and vCenter Server 6.5
+        \item Linux-based domain with FreeIPA
+        \item Backups using Veeam Backup and Replication to homemade NFS node
+        \item Linux servers running various applications and technologies for
+            learning purposes
+        \item Virtualized pfSense router with VPN configured for remote network
+            access
+    \end{itemize}
+
+    {\bf IRSeC Infrastructure} - deployed and maintained server cluster for
+    security competition
+    \begin{itemize}
+        \item vSphere 6.5 cluster, 8 compute nodes, 3-node Ceph cluster with
+            NFS exports
+        \item 70+ various Linux and Windows virtual machines created and
+            maintained
+        \item Server provisioning and configuration controlled through Ansible
+    \end{itemize}
 
 \end{rSection}
 
@@ -52,33 +93,23 @@ Overall GPA: 5.678
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-\item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-\item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-\item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-\item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-\item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
-\end{rSubsection}
+    \begin{rSubsection}{NT Concepts}{June 2017 - August 2017}{IT Intern}{Vienna, VA}
+    \item Led network reconfiguration project to adhere to known best practices
+    \item Led project to deploy and configure internal network time servers
+    \item Created and automated new patch management and approval process
+    \item Wrote extensive technical documentation for department processes,
+        systems, and configurations
+    \item Audited Active Directory user and group configurations
+    \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-\item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-\item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-\item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-\item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-\item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-\item Maecenas convallis ullamcorper ultricies stylesheets.
-\item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-\item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
-\end{rSubsection}
+    \begin{rSubsection}{NTID Office of Information and Computing Studies}{January 2017 - April 2018}{Clerical Assistant}{Rochester, NY}
+    \item Developed curriculum for CompTIA A+ preparation course
+    \item Maintained inventory records of department assets
+    \item Documented daily and quarterly progress clearly for use in department
+        grant-seeking
+    \end{rSubsection}
 
 \end{rSection}
 
