@@ -4,6 +4,9 @@ contact.tex
 # Swap? Nah
 *.swp
 
+# Maybe not PDF
+resume.pdf
+
 ##
 #  LaTeX stuff
 ##
