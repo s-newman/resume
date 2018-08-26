@@ -11,61 +11,68 @@
 %
 % Important note:
 % This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
+% .tex file. The resume.cls file provides the resume style used for structuring
+% the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+% Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{enumitem}
 
 \name{Sean Newman} % Your name
-\input{contact} % import the contact info
+\input{contact}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
 {\bf Rochester Institute of Technology} \hfill {\em Est. May 2021} \\ 
-B.S. in Computing Security
-Overall GPA: 3.45
+B.S. in Computing Security \hfill Overall GPA: 3.45
 
 \end{rSection}
 
-% Skillz
-% -------------
+%------------------------------------------------------------------------------
+%   SKILLS
+%------------------------------------------------------------------------------
 
 \begin{rSection}{Skills}
-    {\bf Programming} - Python, C, Java, Bash, and PowerShell \\
-    {\bf Operating Systems} - Linux (Debian- and RHEL-based), Windows Server
-    systems (post 2012) \\
-    {\bf Virtualization} - VMware vSphere Enterprise 6.5 (ESXi, vCenter Server)
-    VMware Workstation Pro \\
+    \begin{description}
+        \itemsep -0.5em
+        \item[Programming] Python, C, Java, Bash, and PowerShell
+        \item[Operating Systems] Linux, (Debian- and RHEL-based), Windows
+            Server systems (post 2012)
+        \item[Virtualization] VMware vSphere Enterprise 6.5 (ESXi, vCenter
+            Server), VMware Workstation Pro
+    \end{description}
     Basic experience with:
-    \begin{itemize}
-        \item Ansible configuration management
-        \item Active Directory administration
-        \item Cisco IOS
-    \end{itemize}
+    \begin{list}{$\bullet$}{\leftmargin=2em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Ansible configuration management
+    \item Active Directory administration
+    \item Cisco IOS
+    \end{list}
 
 \end{rSection}
 
-% Projects
-% -------------
+%------------------------------------------------------------------------------
+%   Projects
+%------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
 
     {\bf Home Lab} - vSphere infrastructure set up on personal server
-    \begin{itemize}
+    \begin{itemize}[noitemsep]
         \item ESXi and vCenter Server 6.5
         \item Linux-based domain with FreeIPA
         \item Backups using Veeam Backup and Replication to homemade NFS node
@@ -77,7 +84,7 @@ Overall GPA: 3.45
 
     {\bf IRSeC Infrastructure} - deployed and maintained server cluster for
     security competition
-    \begin{itemize}
+    \begin{itemize}[noitemsep]
         \item vSphere 6.5 cluster, 8 compute nodes, 3-node Ceph cluster with
             NFS exports
         \item 70+ various Linux and Windows virtual machines created and
@@ -87,13 +94,14 @@ Overall GPA: 3.45
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
 
-    \begin{rSubsection}{NT Concepts}{June 2017 - August 2017}{IT Intern}{Vienna, VA}
+    \begin{rSubsection}{NT Concepts}{June 2017 - August 2017}{IT Intern}
+        {Vienna, VA}
     \item Led network reconfiguration project to adhere to known best practices
     \item Led project to deploy and configure internal network time servers
     \item Created and automated new patch management and approval process
@@ -104,7 +112,8 @@ Overall GPA: 3.45
 
 %------------------------------------------------
 
-    \begin{rSubsection}{NTID Office of Information and Computing Studies}{January 2017 - April 2018}{Clerical Assistant}{Rochester, NY}
+    \begin{rSubsection}{NTID Office of Information and Computing Studies}
+        {January 2017 - April 2018}{Clerical Assistant}{Rochester, NY}
     \item Developed curriculum for CompTIA A+ preparation course
     \item Maintained inventory records of department assets
     \item Documented daily and quarterly progress clearly for use in department
@@ -113,9 +122,9 @@ Overall GPA: 3.45
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \begin{rSection}{Technical Strengths}
 
@@ -128,9 +137,9 @@ Tools & SVN, Vim, Emacs
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 %\begin{rSection}{Section Name}
 
@@ -138,6 +147,6 @@ Tools & SVN, Vim, Emacs
 
 %\end{rSection}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \end{document}
