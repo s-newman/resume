@@ -123,6 +123,31 @@
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
+%%---
+%% Description List
+%%---
+%\newenvironment{rDList}[2]{ % 2 input arguments - List header and description
+%    \\
+%    {\bf #1}
+%    \textemdash #2
+%    \begin{list}{$\cdot$}
+%    \itemsep -0.5em \vspace{-0.5em}
+%    }{
+%    \end{list}
+%}
+%
+%%---
+%% Named List
+%%---
+%\newenvironment{rNList}[1]{ % 2 input arguments - List header and description
+%    \\
+%    {\bf #1}
+%    \begin{list}{$\cdot$}
+%    \itemsep -0.5em \vspace{-0.5em}
+%    }{
+%    \end{list}
+%}
+
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
