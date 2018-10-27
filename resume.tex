@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring
+% the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------
+
+\documentclass[8pt]{resume} % Use the custom resume.cls style
+
+% Document margins
+\usepackage[left=0.5in,top=0.35in,right=0.5in,bottom=0.35in]{geometry}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\name{Sean Newman} % Your name
+% \input{contact}
+
+\begin{document}
+
+%------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Rochester Institute of Technology} \hfill {\em Estimated May 2021} \\ 
+B.S./M.S. in Computing Security \hfill Overall GPA: 3.45
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%   SKILLS (technical expertise?)
+%------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+    \begin{multicols}{2}[]
+
+    \begin{description}
+        \itemsep -0.5em
+        \item[Languages] Python, C, JavaScript, Bash, PowerShell, Java, \LaTeX
+        \item[Tools/Software] Linux \& Windows Server, VMware vSphere Suite,
+            Ansible
+    \end{description}
+
+    \end{multicols}
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%   Start two-column section
+%------------------------------------------------------------------------------
+
+\begin{multicols}{2}[]
+
+%------------------------------------------------------------------------------
+%   Projects
+%------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+    {\bf IRSeC Infrastructure} - deployed and ran security competition on
+    vSphere/Ceph cluster
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+    \itemsep -0.5em \vspace{-0.5em}
+        \item Teams defended small networks against student-run Red Team
+        \item Vulnerable services deployed and configured via Ansible
+        \item 8 compute nodes and 3 storage nodes in cluster
+    \end{list}
+
+%------------------------------------------------------------------------------
+
+    {\bf Home Lab} - vSphere cluster deployed on personal servers
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+    \itemsep -0.5em \vspace{-0.5em}
+        \item Two sites connected via IPSeC tunnel
+        \item ESXi/vCenter Server and Hyper-V hosts
+        \item Linux-based domain with FreeIPA
+        \item Backups using Veeam Backup and Replication
+        \item Virtualized pfSense router with VPN configured for remote network
+            access
+    \end{list}
+
+\end{rSection}
+
+\columnbreak
+
+%------------------------------------------------------------------------------
+%   Activities	
+%------------------------------------------------------------------------------
+
+\begin{rSection}{Activities}
+
+    {\bf RITSEC}: Member, 2018-Present; Competition Architect, 2018-Present
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Responsible for all club competitions: RITSEC CTF 2018, ISTS 17,
+        IRSeC 2019
+    \end{list}
+
+    {\bf RIT Competitive Cybersecurity Club}: Member, 2016-2018; Secretary,
+    2017-2018
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Co-lead for spring competition infrastructure (see "Projects")
+    \item Assisted with fall CTF competition
+    \end{list}
+
+    {\bf SPARSA}: Member, 2016-2018
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Gave presentation on the basics of honeypotting
+    \end{list}
+
+    {\bf Electronic Gaming Society}: LAN Officer, 2017-2018
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Responsible for setting up and maintaining networks during club
+        events
+    \end{list}
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%   End two-column section
+%------------------------------------------------------------------------------
+
+\end{multicols}
+
+%------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Experience}
+
+    \begin{rSubsection}
+        {Datto, Inc.}
+        {June 2018 - August 2018}
+        {Infrastructure Engineering Intern}
+        {Norwalk, CT}
+    \item Created utility for compiling data from various sources into new
+        source-of-truth documentation app
+    \item Triaged and troubleshooted issues on fleet of over 4,000 production
+        servers
+    \item Created utility for auditing DNS records and documentation of IPMI
+        interfaces
+    \item Participated in weekly code reviews to learn about and improve new
+        utilities written by coworkers
+    \end{rSubsection}
+
+%------------------------------------------------------------------------------
+
+    \begin{rSubsection}
+        {NT Concepts}
+        {June 2017 - August 2017}
+        {IT Intern}
+        {Vienna, VA}
+    \item Led network reconfiguration project to adhere to RFC 1918
+    \item Led project to deploy and configure internal network time servers
+    \item Researched and evaluated tool for integration into patch management
+        and approval process
+    \end{rSubsection}
+
+%------------------------------------------------------------------------------
+
+    \begin{rSubsection}
+        {NTID Office of Information and Computing Studies}
+        {January 2017 - April 2018}
+        {Clerical Assistant}
+        {Rochester, NY}
+    \item Developed curriculum for CompTIA A+ preparation course
+    \item Maintained inventory records of department assets
+    \end{rSubsection}
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%------------------------------------------------------------------------------
+
+\end{document}
