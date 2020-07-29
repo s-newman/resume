@@ -39,7 +39,7 @@
 \begin{rSection}{Education}
 
 {\bf Rochester Institute of Technology} \hfill {\em Estimated May 2021} \\ 
-B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
+B.S./M.S. in Computing Security \hfill Overall GPA: 3.35
 
 \end{rSection}
 
@@ -53,10 +53,8 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
 
     \begin{description}
         \itemsep -0.5em
-        \item[Languages] Python, C, Bash, C++, JavaScript, PowerShell, Java,
-            \LaTeX
-        \item[Tools/Software] Linux \& Windows Server, Ansible, GitLab \&
-            GitLab CI, VMware vSphere Suite
+        \item[Languages] Python, Rust, TypeScript, JavaScript, Bash, C++, C, PowerShell, Java, \LaTeX
+        \item[Tools/Software] Linux \& Windows Server, Elastic Stack (ELK), Ansible, GitLab \& GitLab CI, VMware vSphere Suite
     \end{description}
 
     \end{multicols}
@@ -74,6 +72,15 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
 %------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
+    
+    {\bf ScoreStack} - a scoring system for security competitions built on the Elastic Stack
+    \begin{list}{$\bullet$}{\leftmargin=1em}
+        \item Dynamicbeat - a custom Beat written in Golang to perform checks
+        \item Kibana Plugin written in TypeScript \& React to manage checks
+        \item Ansible \& Terraform deployment automation
+    \end{list}
+
+%------------------------------------------------------------------------------
 
     {\bf ISTS 17} - ran national security competition with Red vs. Blue, CTF,
         and King of the Hill components
@@ -95,26 +102,26 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
 
 %------------------------------------------------------------------------------
 
-    {\bf IRSeC Infrastructure} - deployed Red vs. Blue security competition on
-    vSphere/Ceph cluster
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-        \item Student teams defended small 6-host networks
-        \item Deployment of vulnerable services with Ansible
-    \end{list}
+%    {\bf IRSeC Infrastructure} - deployed Red vs. Blue security competition on
+%    vSphere/Ceph cluster
+%    \begin{list}{$\bullet$}{\leftmargin=1em}
+%    \itemsep -0.5em \vspace{-0.5em}
+%        \item Student teams defended small 6-host networks
+%        \item Deployment of vulnerable services with Ansible
+%    \end{list}
 
 %------------------------------------------------------------------------------
 
-    {\bf Home Lab} - personal server for various projects
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-        \item ESXi/vCenter Server virtualization stack
-        \item Linux-based domain with FreeIPA
-        \item Virtualized pfSense router with VPN configured for remote network
-            access
-        \item GitLab used for source control, documentation, and tracking
-            progress on projects
-    \end{list}
+%    {\bf Home Lab} - personal server for various projects
+%    \begin{list}{$\bullet$}{\leftmargin=1em}
+%    \itemsep -0.5em \vspace{-0.5em}
+%        \item ESXi/vCenter Server virtualization stack
+%        \item Linux-based domain with FreeIPA
+%        \item Virtualized pfSense router with VPN configured for remote network
+%            access
+%        \item GitLab used for source control, documentation, and tracking
+%            progress on projects
+%    \end{list}
 
 \end{rSection}
 
@@ -133,12 +140,16 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
         IRSeC 2019
     \end{list}
 
+%------------------------------------------------------------------------------
+
     {\bf Collegiate Cyber Defense Competition}: RIT Team member, 2018-2020
     \begin{list}{$\bullet$}{\leftmargin=1em}
     \itemsep -0.5em \vspace{-0.5em}
     \item 1st place - Northeastern CCDC Regionals 2019 \& 2020
     \item 3rd place - National CCDC 2019
     \end{list}
+
+%------------------------------------------------------------------------------
 
     {\bf RIT Competitive Cybersecurity Club}: Member, 2016-2018; Secretary,
     2017-2018
@@ -148,18 +159,22 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
     \item Assisted with fall CTF competition
     \end{list}
 
+%------------------------------------------------------------------------------
+
     {\bf SPARSA}: Member, 2016-2018
     \begin{list}{$\bullet$}{\leftmargin=1em}
     \itemsep -0.5em \vspace{-0.5em}
     \item Gave presentation on the basics of honeypotting
     \end{list}
 
-    {\bf Electronic Gaming Society}: LAN Officer, 2017-2018
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-    \item Responsible for setting up and maintaining networks during club
-        events
-    \end{list}
+%------------------------------------------------------------------------------
+
+%    {\bf Electronic Gaming Society}: LAN Officer, 2017-2018
+%    \begin{list}{$\bullet$}{\leftmargin=1em}
+%    \itemsep -0.5em \vspace{-0.5em}
+%    \item Responsible for setting up and maintaining networks during club
+%        events
+%    \end{list}
 
 \end{rSection}
 
@@ -180,12 +195,9 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
         {May 2019 - Present}
         {McLean, VA}
     \item Created high-performance data collection and analysis utility
-    \item Developed Ansible roles to deploy services for a threat emulation
-        environment
-    \item Contributed to cloud-based network research utility using Apache
-        Libcloud
-    \item Created custom tooling to reduce a project's build times by 20-30
-        minutes
+    \item Developed Ansible roles to deploy services for a threat emulation environment
+    \item Contributed to cloud-based network research utility using Apache Libcloud
+    \item Created custom tooling to reduce a project's build times by 20-30 minutes
     \end{rSubsection}
 
 %------------------------------------------------------------------------------
@@ -195,14 +207,10 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
         {June 2018 - August 2018}
         {Infrastructure Engineering Intern}
         {Norwalk, CT}
-    \item Created utility for compiling data from various sources into new
-        source-of-truth documentation app
-    \item Triaged and troubleshooted issues on fleet of over 4,000 production
-        servers
-%    \item Created utility for auditing DNS records and documentation of IPMI
-%        interfaces
-%    \item Participated in weekly code reviews to learn about and improve new
-%        utilities written by coworkers
+    \item Created utility for compiling data from various sources into new source-of-truth documentation app
+    \item Triaged and troubleshooted issues on fleet of over 4,000 production servers
+%    \item Created utility for auditing DNS records and documentation of IPMI interfaces
+%    \item Participated in weekly code reviews to learn about and improve new utilities written by coworkers
     \end{rSubsection}
 %
 %%------------------------------------------------------------------------------
@@ -214,8 +222,7 @@ B.S./M.S. in Computing Security \hfill Overall GPA: 3.33
 %        {Vienna, VA}
 %    \item Led network reconfiguration project to adhere to RFC 1918
 %    \item Led project to deploy and configure internal network time servers
-%    \item Researched and evaluated tool for integration into patch management
-%        and approval process
+%    \item Researched and evaluated tool for integration into patch management and approval process
 %    \end{rSubsection}
 %
 %%------------------------------------------------------------------------------
